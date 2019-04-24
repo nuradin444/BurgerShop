@@ -1,0 +1,119 @@
+
+.products{
+    list-style:none;
+    margin-right:250px;
+    padding:0px;
+    height:100%;
+}
+.products li{
+    display:inline;
+    float:left;
+    margin:-10px;
+}
+.item{
+    display:block;
+    text-decoration:none;
+    margin:50px;
+}
+.item img{
+    border:4px solid #333;
+    
+}
+.item p{
+    margin:0;
+    font-weight:bold;
+    text-align:center;
+    color:#c3c3c3;
+}
+.cart{
+    position:fixed;
+    right:0;
+    top:0;
+    width:345px;
+    height:100%;
+    background:#ccc;
+    padding:0px 10px;
+    overflow: auto;
+}
+h1{
+    text-align:center;
+    color:#555;
+   
+    
+}
+h2{
+    position:absolute;
+    font-size:16px;
+    left:10px;
+    bottom:20px;
+    color:#555;
+}
+.total{
+    margin:0;
+    text-align:right;
+    padding-right:20px;
+}
+body{
+    margin:0;
+    padding:0;
+    height:100%;
+    background: linear-gradient(orange, transparent 100%), linear-gradient(0deg, rgb(56, 41, 41), transparent), #ffa949 
+    url('images/wallpaper.jpg') no-repeat center;
+    background-size: cover;
+    font-family: Helvetica;
+}
+.myButton {
+	-moz-box-shadow: 0px 10px 14px -7px #3e7327;
+	-webkit-box-shadow: 0px 10px 14px -7px #3e7327;
+	box-shadow: 0px 10px 14px -7px #3e7327;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
+	background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77b55a', endColorstr='#72b352',GradientType=0);
+	background-color:#77b55a;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:23px;
+	font-weight:bold;
+	padding:10px 55px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #72b352), color-stop(1, #77b55a));
+	background:-moz-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-webkit-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-o-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-ms-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#72b352', endColorstr='#77b55a',GradientType=0);
+	background-color:#72b352;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+/* [1] The container */
+.img-hover-zoom {
+  height: 260px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.4);
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Burger Shop</title>
+	<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+	<script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+<script src="main.js"></script>
+</head>
+
+<h1>Burger shop</h1>
+
+<body>
+
+	
+	<div class="tip">
+	<ul class="products">
+		<li>
+			<a class="item">
+					<div class="img-hover-zoom"><img src="images/Cheeseburger.jpg" height="260px" width="255"/></div>
+				<div>
+					<p>Cheese Burger</p>
+					<p>Price:$12</p>
+					<td>
+						<input type="button" value="Add to cart" class="myButton" onclick="AddtoCart('Cheeseburger','100% pure beef with toppings of your choosing',12)"/>
+						
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a  class="item">
+				<div class="img-hover-zoom"><img src="images/beefburger.jpg" height="260px" width="249"/></div>
+				<div>
+					<p>beef burger</p>
+					<p>Price:$10</p>
+					<td>
+						<input type="button" value="Add to cart" class="myButton" onclick="AddtoCart('beefburger','grilled patty with toppings of your choosing',10)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a  class="item">
+				<div class="img-hover-zoom"><img src="images/chickenburger.jpg" height="260px" width="235"/></div>
+				<div>
+					<p>chicken burger</p>
+					<p>Price:$8</p>
+					<td>
+						<input type="button" value="Add to cart" class="myButton" onclick="AddtoCart('chickenburger','The delicious chickenburger with toppings of your choosing',8)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a  class="item">
+				<div class="img-hover-zoom"><img src="images/wings.jpg" height="250px" width="250"/></div>
+				<div>
+					<p>wings</p>
+					<p>Price:$5</p>
+					<td>
+						<input type="button" value="Add to cart" class="myButton" onclick="AddtoCart('wings','select from hot to plain chicken wings',5)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a  class="item">
+				<div class="img-hover-zoom"><img src="images/veganburger.jpeg" height="250px" width="255"/></div>
+				<div>
+					<p>Vegan Burger</p>
+					<p>Price:$7</p>
+					<td>
+						<input type="button" value="Add to cart" class="myButton" onclick="AddtoCart('veganburger','Our mouthwatering veganburger is made to your satisfaction',7)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a  class="item">
+				<div class="img-hover-zoom"><img src="images/fishburger.jpg" height="250px" width="233"/></div>
+				<div>
+					<p>Fish Burger</p>
+					<p>Price:$9</p>
+					<td>
+						<input type="button" value="Add to cart" class="myButton" onclick="AddtoCart('fishburger','fishburger with salt, coat in flour, dip into egg then press into breadcrumbs with toppings of your choosing',9)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a  class="item">
+				<div class="img-hover-zoom"><img src="images/chips.jpg" height="260px" width="250"/></div>
+				<div>
+					<p>Chips</p>
+					<p>Price:$1</p>
+					<td>
+						<input type="button" value="Add to cart" class="myButton" onclick="AddtoCart('chips','delicious chips to go with your Burger',1)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a class="item">
+				<div class="img-hover-zoom"><img src="images/steakburger.jpg" height="260px" width="255"/></div>
+				<div>
+					<p>Steak Burger</p>
+					<p>Price:$13</p>
+					<td>
+						<input type="button" value="Add to cart" class="myButton" onclick="AddtoCart('steakburger','a cross between a beef burger and a steak with toppings of your own choosing',13)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a  class="item">
+				<div class="img-hover-zoom"><img src="images/cola.png" height="260px" width="215"/></div>
+				<div>
+					<p>Cola</p>
+					<p>Price:$1</p>
+					<td>
+						<input type="button" value="Add to cart" class="myButton" onclick="AddtoCart('cola','Refreshing classic coke',1)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a  class="item">
+				<div class="img-hover-zoom"><img src="images/sprite.png" height="260px" width="160"/></div>
+				<div>
+					<p>Sprite</p>
+					<p>Price:$1</p>
+					<td>
+						<input type="button" value="Add to cart" class="myButton" onclick="AddtoCart('Sprite','lemon and lime flavored drink',1)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a  class="item">
+				<div class="img-hover-zoom"><img src="images/fanta.png" height="260px" width="180"/></div>
+				<div>
+					<p>Fanta</p>
+					<p>Price:$1</p>
+					<td>
+						<input type="button" value="Add to cart" class="myButton" onclick="AddtoCart('Fanta','Bright, bubbly and a popular favourite fanta orange',1)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a class="item">
+				<div class="img-hover-zoom"><img src="images/water.jpg" height="260px" width="215"/></div>
+				<div>
+					<p>Water</p>
+					<p>Price:$1</p>
+					<td>
+						<input type="button" value="Add to cart" class="myButton" onclick="AddtoCart('water','Natural Mineral Water',1)"/>
+					</td>
+				</div>
+			</a>
+		</li>
+	</ul>
+</div>
+
+	<div class="cart" >
+		<h1>Shopping Cart</h1>
+		<td valign="top">
+            <table cellpadding="4" cellspacing="4" border="1" id="orderedProductsTbl">
+                <thead>
+                    <tr>
+                        <td>
+                            Name
+                        </td>
+                        <td>
+                            Description
+                        </td>
+                        <td>
+                            Price
+                        </td>
+                    </tr>
+                </thead>
+                <tbody id="orderedProductsTblBody">
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" align="right" id="cart_total">
+
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </td>
+    </tr>
+</table>
+	</div>
+	
+</body>
+
+</html>
